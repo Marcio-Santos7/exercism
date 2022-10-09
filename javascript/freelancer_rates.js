@@ -30,5 +30,28 @@ arredondado para o número inteiro mais próximo.
 */
 
 function daysInBudget(budget, hourRate){
-    return Math.round((budget / (hourRate * 8))); 
+    return Math.floor((budget / (hourRate * 8))); 
 }
+
+/*
+3. Calcular a taxa de desconto para grandes projetos
+
+Muitas vezes, os clientes do freelancer os contratam para projetos que duram vários meses. 
+Cada mês tem 22 dias faturáveis. Ajude-os a estimar o custo desses projetos, considerando 
+uma taxa horária, o número de dias que o projeto abrange e uma taxa de desconto mensal.  
+O desconto é sempre passado como um número, onde 42% se torna 0,42. O resultado deve ser 
+arredondado para o número inteiro mais próximo. 
+*/ 
+
+function priceWithMonthlyDiscount(hourRate, numberDays, monthRate){
+    if(numberDays < 22){
+        return ((numberDays * (8 * hourRate)) * (1 - monthRate))
+    } else if ((numberDays % 22) == 0){
+        return Math.ceil(((numberDays / 22) * (22 * 8 * hourRate)) * (1 - monthRate))
+    } else {
+        return Math.ceil((((numberDays - ((Math.floor(numberDays / 22 )) * 22 )) * 8 * hourRate) +
+        (Math.floor(numberDays / 22 ) * 22 * 8 * hourRate) * (1 - monthRate)))
+    }
+     
+}
+
