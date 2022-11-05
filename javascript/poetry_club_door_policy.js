@@ -109,3 +109,32 @@ function backDoorResponse(frase){
 }
 
 console.log(backDoorResponse('Stands so high   '));
+
+/*
+4. Seja educado
+
+Para entrar no clube de poesia pela porta dos fundos, você precisa ser muito educado.  
+Então, para derivar a senha, desta vez você precisa colocar a palavra corretamente em 
+maiúscula e adicionar ', please' no final. 
+
+Implemente a função backDoorPassword que aceita uma string (as letras combinadas que você 
+encontrou na tarefa 3) e retorna a versão educada da senha em maiúscula.
+*/
+
+function backDoorPassword(frase){
+    
+    let letraModificada = '';
+
+    for(i=0; i<frase.length; i++){
+
+        if(i==0){
+            letraModificada += frase.charAt(i).toUpperCase();
+        } else{
+            letraModificada += frase.charAt(i).toLowerCase();
+        }
+    }
+
+    return letraModificada + ', please';
+}
+
+console.log(backDoorPassword('horse'));
