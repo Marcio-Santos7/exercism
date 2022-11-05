@@ -28,9 +28,11 @@ Impatiently waits for
 Reins and harness
 Eager to leave
 
-Então, quando o guarda recita Stands so high, você responderá S, quando o guarda recitar Huge hooves too, você responderá H.
+Então, quando o guarda recita Stands so high, você responderá S, quando o guarda recitar 
+Huge hooves too, você responderá H.
 
-Implemente a função frontDoorResponse que recebe uma linha do poema como argumento e retorna a primeira letra dessa linha.
+Implemente a função frontDoorResponse que recebe uma linha do poema como argumento e retorna 
+a primeira letra dessa linha.
 */ 
 
 function frontDoorResponse(frase){
@@ -38,6 +40,17 @@ function frontDoorResponse(frase){
 }
 
 console.log(frontDoorResponse('Stands so high'));
+
+/*
+2. Coloque uma palavra em maiúscula
+
+Agora que você tem todas as letras corretas, tudo o que você precisa fazer para obter a 
+senha da porta da frente é colocar a palavra corretamente em maiúscula.
+
+Implemente a função frontDoorPassword que aceita uma string (as letras combinadas que você 
+encontrou na tarefa 1) e a retorna corretamente em maiúscula.
+*/
+
 
 function frontDoorPassword(frase){
 
@@ -57,3 +70,42 @@ function frontDoorPassword(frase){
 }
 
 console.log(frontDoorPassword('SHIRE'));
+
+/*
+3. Obtenha a última letra de uma frase
+
+
+Para determinar as letras da senha da porta dos fundos, você precisa responder com a última 
+letra do verso do poema que o guarda recita para você.
+
+Os membros do clube de poesia são muito inteligentes. O poema mencionado anteriormente 
+também é telestich, o que significa que a última letra de cada frase também forma uma 
+palavra:
+
+Stands so high
+Huge hooves too
+Impatiently waits for
+Reins and harness
+Eager to leave
+
+Quando o guarda recitar Stands so high, você responderá h, quando o guarda recitar Huge 
+hooves too, você responderá o.
+
+Observe que às vezes o guarda faz pausas estilísticas (na forma de espaço em branco) no 
+início ou no final de uma linha. Você precisará ignorar essas pausas para derivar a letra 
+correta.
+
+Implemente a função backDoorResponse que recebe uma linha do poema como argumento e retorna 
+a última letra dessa linha que não seja um caractere de espaço em branco.
+*/
+
+function backDoorResponse(frase){
+    
+    let fraseSemEspacoBranco = frase.trim();
+    let ultimaLetra = fraseSemEspacoBranco.charAt(fraseSemEspacoBranco.length - 1);
+
+    return ultimaLetra;
+
+}
+
+console.log(backDoorResponse('Stands so high   '));
