@@ -125,7 +125,7 @@ function backDoorPassword(frase){
     
     let letraModificada = '';
 
-    for(i=0; i<frase.length; i++){
+    for(let i=0; i<frase.length; i++){
 
         if(i==0){
             letraModificada += frase.charAt(i).toUpperCase();
