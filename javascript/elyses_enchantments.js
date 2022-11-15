@@ -15,3 +15,12 @@ cartão, a posição 1 ao segundo cartão etc.
    
 Para pegar um cartão, devolva o cartão na posição de índice da pilha fornecida. 
 */
+
+const POSITION = 2;
+
+function getItem(arrayCartas, POSITION){
+    
+    return arrayCartas[POSITION];
+}
+
+console.log(getItem([1,2,4,1], POSITION));
