@@ -40,3 +40,10 @@ function setItem(arrayCartas, POSITION, REPLACEMENTCARD){
 }
 
 console.log(setItem([1,2,4,1], POSITION, REPLACEMENTCARD));
+
+/*
+3. Insira um cartão no topo da pilha
+   
+Faça um cartão aparecer inserindo um novo cartão no topo da pilha. Devolva a pilha ajustada.
+*/
+
