@@ -24,3 +24,19 @@ function getItem(arrayCartas, POSITION){
 }
 
 console.log(getItem([1,2,4,1], POSITION));
+
+/*
+2. Troque uma carta na pilha
+   
+Faça algum truque de mão e troque o cartão na posição de índice com o cartão de substituição 
+fornecido. Devolva a pilha ajustada.
+*/
+
+const REPLACEMENTCARD = 6;
+
+function setItem(arrayCartas, POSITION, REPLACEMENTCARD){
+    arrayCartas[POSITION] = REPLACEMENTCARD;
+    return arrayCartas;
+}
+
+console.log(setItem([1,2,4,1], POSITION, REPLACEMENTCARD));
