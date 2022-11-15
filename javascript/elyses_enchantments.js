@@ -55,3 +55,11 @@ function insertItemAtTop(arrayCartas, NEWCARD){
 }
 
 console.log(insertItemAtTop([5,9,7,1], NEWCARD));
+
+/* 
+4. Remova um cartão da pilha
+   
+Faça uma carta desaparecer removendo a carta na posição dada da pilha. Devolva a pilha 
+ajustada.
+*/
+
