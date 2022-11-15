@@ -47,3 +47,11 @@ console.log(setItem([1,2,4,1], POSITION, REPLACEMENTCARD));
 Faça um cartão aparecer inserindo um novo cartão no topo da pilha. Devolva a pilha ajustada.
 */
 
+const NEWCARD = 8;
+
+function insertItemAtTop(arrayCartas, NEWCARD){
+    arrayCartas.push(NEWCARD);
+    return arrayCartas;
+}
+
+console.log(insertItemAtTop([5,9,7,1], NEWCARD));
