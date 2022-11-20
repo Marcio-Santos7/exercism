@@ -111,3 +111,20 @@ function removeItemAtBottom(arrayCartas){
 
 console.log(removeItemAtBottom([8,5,9,7,1]));
 
+/*
+8. Verifique o tamanho da pilha   
+
+Verifique se o tamanho da pilha é igual a stackSize ou não.
+*/
+
+const STACKSIZE = 5;
+
+function checkSizeOfStack(arrayCartas, STACKSIZE){
+    if(arrayCartas.length == STACKSIZE){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(checkSizeOfStack([3,2,6,4,8], STACKSIZE));
