@@ -96,3 +96,18 @@ function insertItemAtBottom(arrayCartas, NEWCARD){
 }
 
 console.log(insertItemAtBottom([5,9,7,1], NEWCARD));
+
+/*
+7.  Remova um cartão da parte inferior da pilha
+   
+Faça um cartão desaparecer removendo o cartão na parte inferior da pilha. Devolva a pilha 
+ajustada.
+*/
+
+function removeItemAtBottom(arrayCartas){
+    arrayCartas.shift();
+    return arrayCartas;
+}
+
+console.log(removeItemAtBottom([8,5,9,7,1]));
+
