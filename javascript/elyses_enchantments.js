@@ -69,3 +69,16 @@ function removeItem(arrayCartas, POSITION){
 }
 
 console.log(removeItem([3,2,6,4,8], POSITION));
+
+/*
+5.  Remova o cartão do topo da pilha   
+
+Faça uma carta desaparecer removendo a carta do topo da pilha. Devolva a pilha ajustada.
+*/
+
+function removeItemFromTop(arrayCartas){
+    arrayCartas.pop();
+    return arrayCartas;
+}
+
+console.log(removeItemFromTop([3,2,6,4,8]));
