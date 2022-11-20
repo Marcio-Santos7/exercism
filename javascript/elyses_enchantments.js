@@ -63,3 +63,9 @@ Faça uma carta desaparecer removendo a carta na posição dada da pilha. Devolv
 ajustada.
 */
 
+function removeItem(arrayCartas, POSITION){
+    arrayCartas.splice(POSITION, 1);
+    return arrayCartas;
+}
+
+console.log(removeItem([3,2,6,4,8], POSITION));
