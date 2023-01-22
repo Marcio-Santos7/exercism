@@ -27,3 +27,4 @@ function needsLicense(kind){
 
 console.log(needsLicense('car'));
 console.log(needsLicense('bike'));
+
