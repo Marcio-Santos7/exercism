@@ -28,3 +28,27 @@ function needsLicense(kind){
 console.log(needsLicense('car'));
 console.log(needsLicense('bike'));
 
+/*
+2. Escolha entre dois veículos em potencial para comprar
+
+Você avalia suas opções de veículos disponíveis. Você consegue reduzi-lo a duas opções, mas 
+precisa de ajuda para tomar a decisão final.  Para isso implemente a função 
+chooseVehicle(option1, option2) que recebe dois veículos como argumentos e retorna uma 
+decisão que inclui a opção que vem primeiro na ordem do dicionário.
+*/
+
+function chooseVehicle(option1, option2){
+    
+    let vehicle;
+
+    if(option1 < option2){
+        vehicle = option1;
+    } else {
+        vehicle = option2;
+    }
+
+    return (vehicle + " is clearly the better choice");
+}
+
+console.log(chooseVehicle('Wuling Hongguang', 'Toyota Corolla'));
+console.log(chooseVehicle('Volkswagen Beetle', 'Volkswagen Golf'));
