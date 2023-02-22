@@ -52,3 +52,35 @@ function chooseVehicle(option1, option2){
 
 console.log(chooseVehicle('Wuling Hongguang', 'Toyota Corolla'));
 console.log(chooseVehicle('Volkswagen Beetle', 'Volkswagen Golf'));
+
+/*
+3. Calcule uma estimativa do preço de um veículo usado
+
+Agora que você tomou sua decisão, deseja garantir um preço justo na concessionária. Como 
+você está interessado em comprar um veículo usado, o preço depende da idade do veículo. Para 
+uma estimativa aproximada, suponha que se o veículo tiver menos de 3 anos, custa 80% do 
+preço original que tinha quando era novo. Se tiver mais de 10 anos, custa 50%. Se o veículo 
+tiver pelo menos 3 anos, mas não mais de 10 anos, custa 70% do preço original. 
+
+Implemente a função calculateResellPrice(originalPrice, age) que aplica essa lógica usando 
+if, else if e else (existem outras maneiras, mas você deseja praticar). Toma como argumentos 
+o preço original e a idade do veículo e retorna o preço estimado na concessionária. 
+*/
+
+function calculateResellPrice(originalPrice, age){
+    let costVehicle;
+    
+    if(age < 3){
+        costVehicle = (0.8 * originalPrice);
+    } else if(age > 10){
+        costVehicle = (0.5 * originalPrice);
+    } else{
+        costVehicle = (0.7 * originalPrice);
+    }
+
+    return costVehicle;
+}
+
+console.log(calculateResellPrice(1000, 1));
+console.log(calculateResellPrice(1000, 5));
+console.log(calculateResellPrice(1000, 15));
