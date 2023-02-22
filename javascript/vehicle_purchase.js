@@ -47,7 +47,7 @@ function chooseVehicle(option1, option2){
         vehicle = option2;
     }
 
-    return (vehicle + " is clearly the better choice");
+    return (vehicle + " is clearly the better choice.");
 }
 
 console.log(chooseVehicle('Wuling Hongguang', 'Toyota Corolla'));
