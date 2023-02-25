@@ -14,3 +14,13 @@ Observação
 Para praticar, use um loop for para resolver cada uma das tarefas abaixo. 
 */
 
+/*
+1. Determine o número total de pássaros que você contou até agora
+
+Vamos começar a analisar os dados obtendo uma visão de alto nível. Descubra quantos pássaros 
+você contou no total desde que iniciou seus registros. 
+
+Implemente uma função totalBirdCount que aceite um array que contém a contagem de pássaros 
+por dia. Ele deve retornar o número total de pássaros que você contou.
+*/
+
