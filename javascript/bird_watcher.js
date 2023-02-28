@@ -24,3 +24,18 @@ Implemente uma função totalBirdCount que aceite um array que contém a contage
 por dia. Ele deve retornar o número total de pássaros que você contou.
 */
 
+let birdsPerDay = [2, 5, 0, 7, 4, 1, 3, 0, 2, 5, 0, 1, 3, 1];
+
+function totalBirdCount(birdsPerDay){
+
+    let numberTotalBirds = 0;
+
+    for(let i = 0; i < birdsPerDay.length; i++){
+
+       numberTotalBirds += birdsPerDay[i];
+    }
+
+    return numberTotalBirds;
+}
+
+console.log(totalBirdCount(birdsPerDay));
