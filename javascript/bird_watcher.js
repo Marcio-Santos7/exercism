@@ -38,4 +38,39 @@ function totalBirdCount(birdsPerDay){
     return numberTotalBirds;
 }
 
-console.log(totalBirdCount(birdsPerDay));
+//console.log(totalBirdCount(birdsPerDay));
+
+/*
+2. Calcular o número de aves visitantes em uma semana específica
+
+Agora que você tem uma noção geral dos números de contagem de pássaros, deseja fazer uma 
+análise mais refinada.
+
+Implemente uma função birdsInWeek que aceite uma matriz de contagens de pássaros por dia e 
+um número de semana. Ele retorna o número total de aves que você contou naquela semana 
+específica. Você pode presumir que as semanas são sempre rastreadas completamente.
+
+*/
+
+function birdsInWeek(birdsPerDay, numSemana){
+
+    let avesSemana = 0; 
+
+    for(let i = 1; i  <= numSemana; i++){
+        for(let j = 0; j < 7; j++){
+            if(numSemana == i){
+                avesSemana += birdsPerDay[j + ((numSemana - 1) * 7)];
+            } else {
+                break;
+            }
+        }
+    }
+
+    return avesSemana;
+}
+
+console.log(birdsInWeek(birdsPerDay, 2));
+
+/*
+
+*/
