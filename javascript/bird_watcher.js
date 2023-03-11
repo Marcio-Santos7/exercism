@@ -52,14 +52,14 @@ específica. Você pode presumir que as semanas são sempre rastreadas completam
 
 */
 
-function birdsInWeek(birdsPerDay, numSemana){
+function birdsInWeek(birdsPerDay, week){
 
     let avesSemana = 0; 
 
-    for(let i = 1; i  <= numSemana; i++){
+    for(let i = 1; i  <= week; i++){
         for(let j = 0; j < 7; j++){
-            if(numSemana == i){
-                avesSemana += birdsPerDay[j + ((numSemana - 1) * 7)];
+            if(week == i){
+                avesSemana += birdsPerDay[j + ((week - 1) * 7)];
             } else {
                 break;
             }
