@@ -72,5 +72,30 @@ function birdsInWeek(birdsPerDay, numSemana){
 console.log(birdsInWeek(birdsPerDay, 2));
 
 /*
+3. Corrija um erro de contagem
 
+Você percebeu que, durante todo o tempo em que tentava rastrear os pássaros, havia um 
+escondido em um canto distante do jardim. Você descobriu que esse pássaro sempre passava a 
+cada segundo dia em seu jardim. Você não sabe exatamente onde estava entre esses dias, mas 
+definitivamente não em seu jardim. Sua intuição de observador de pássaros também lhe diz que 
+o pássaro estava em seu jardim no primeiro dia que você rastreou em sua lista. 
+
+Dada essa nova informação, escreva uma função fixBirdCountLog que receba uma matriz de 
+pássaros contados por dia como argumento.  Ele deve corrigir o erro de contagem e retornar o 
+array modificado. 
 */
+
+function fixBirdCountLog( birdsPerDay ){
+
+    for(let i = 0; i < birdsPerDay.length; i++){
+        if(i % 2 == 0){
+            birdsPerDay[i] += 1;
+        } else{
+            continue;
+        }
+    }
+
+    return birdsPerDay;
+}
+
+console.log(fixBirdCountLog(birdsPerDay));
