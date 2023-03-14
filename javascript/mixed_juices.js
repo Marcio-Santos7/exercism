@@ -22,3 +22,28 @@ Para ajudar sua amiga, escreva uma função timeToMixJuice que pega um suco do m
 argumento e retorna o número de minutos que leva para misturar aquela bebida.
 */
 
+function timeToMixJuice(juice){
+    
+    let arrayJuice = ["Pure Strawberry Joy", "Energizer", "Green Garden", "Tropical Island",     
+ "All or Nothing"];
+
+ let i = 0;
+
+ while(i < 5){
+    if(juice == "Pure Strawberry Joy"){
+        return 0.5;
+    } else if((juice == "Energizer") || (juice == "Green Garden") ){
+        return 1.5;
+    } else if(juice == "Tropical Island"){
+        return 3;
+    } else if(juice == "All or Nothing"){
+        return 5;
+    } else{
+        return 2.5;
+    }
+ }
+}
+
+console.log(timeToMixJuice("Tropical Island"));
+console.log(timeToMixJuice("Berries & Lime"));
+
