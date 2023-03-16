@@ -47,3 +47,21 @@ function timeToMixJuice(juice){
 console.log(timeToMixJuice("Tropical Island"));
 console.log(timeToMixJuice("Berries & Lime"));
 
+/*
+2. Reabasteça o suprimento de fatias de limão
+
+Muitas das criações de Li Mei incluem fatias de limão, seja como ingrediente ou como parte 
+da decoração. Então, quando ela começa seu turno de manhã, ela precisa se certificar de que 
+a caixa de fatias de limão esteja cheia para o dia seguinte. 
+
+Implemente a função limesToCut que pega o número de fatias de limão que Li Mei precisa 
+cortar e um array representando o suprimento de limões inteiros que ela tem em mãos. Ela 
+pode obter 6 fatias de um limão 'pequeno', 8 fatias de um 'médio' e 10 de um 'grande'. Ela 
+sempre corta os limões na ordem em que aparecem na lista, começando pelo primeiro item. Ela 
+continua até atingir o número de fatias de que precisa ou até ficar sem limões. 
+
+Li Mei gostaria de saber com antecedência quantos limões ela precisa cortar. A função 
+limesToCut deve retornar o número de limões a serem cortados. 
+
+*/
+
