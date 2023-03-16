@@ -52,11 +52,11 @@ console.log(timeToMixJuice("Berries & Lime"));
 
 Muitas das criações de Li Mei incluem fatias de limão, seja como ingrediente ou como parte 
 da decoração. Então, quando ela começa seu turno de manhã, ela precisa se certificar de que 
-a caixa de fatias de limão esteja cheia para o dia seguinte. 
+a caixa de fatias de limão esteja cheia para o dia que se inicia. 
 
 Implemente a função limesToCut que pega o número de fatias de limão que Li Mei precisa 
 cortar e um array representando o suprimento de limões inteiros que ela tem em mãos. Ela 
-pode obter 6 fatias de um limão 'pequeno', 8 fatias de um 'médio' e 10 de um 'grande'. Ela 
+pode obter 6 fatias de um limão 'small', 8 fatias de um 'medium' e 10 de um 'large'. Ela 
 sempre corta os limões na ordem em que aparecem na lista, começando pelo primeiro item. Ela 
 continua até atingir o número de fatias de que precisa ou até ficar sem limões. 
 
@@ -65,3 +65,25 @@ limesToCut deve retornar o número de limões a serem cortados.
 
 */
 
+function limesToCut(numberLimes, arrayLimes){
+
+    let i = 0;
+    let limesCut = 0;
+    while((i < arrayLimes.length) && (limesCut < numberLimes)){
+        if(arrayLimes[i] == 'small'){
+            limesCut += 6;
+            i++;
+        } else if(arrayLimes[i] == 'medium'){
+            limesCut += 8;
+            i++;
+        } else{
+            limesCut += 10;
+            i++;
+        }
+    }
+
+    return i;
+}
+
+console.log(limesToCut(25, ['small', 'small', 'large', 'medium', 'small']));
+console.log(limesToCut(36, ['small', 'small', 'large', 'medium', 'small', 'small']));
