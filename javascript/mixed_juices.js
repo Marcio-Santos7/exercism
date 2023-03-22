@@ -87,3 +87,23 @@ function limesToCut(numberLimes, arrayLimes){
 
 console.log(limesToCut(25, ['small', 'small', 'large', 'medium', 'small']));
 console.log(limesToCut(36, ['small', 'small', 'large', 'medium', 'small', 'small']));
+
+/*
+3. Termine o turno
+
+Li Mei sempre trabalha até as 15h. Então seu empregado Dmitry assume. Muitas vezes, há 
+bebidas que foram pedidas, mas ainda não estão preparadas quando o turno de Li Mei termina. 
+Dmitry irá então preparar os sucos restantes. 
+
+Para facilitar a entrega, implemente uma função de remainingOrders que leva o número de 
+minutos restantes no turno de Li Mei e um array de sucos que foram pedidos, mas ainda não 
+preparados. A função deve retornar os pedidos que Li Mei não pôde começar a preparar antes 
+do final de sua jornada de trabalho.
+
+O tempo restante no turno sempre será maior que 0. O array de sucos para preparar nunca 
+estará vazia. Além disso, os pedidos são preparados na ordem em que aparecem no array. Se 
+Li Mei começar a misturar um determinado suco, ela sempre o terminará, mesmo que tenha que 
+trabalhar um pouco mais. Se não houver pedidos restantes que Dmitry precise cuidar, um array 
+vazio deve ser retornada.
+*/
+
