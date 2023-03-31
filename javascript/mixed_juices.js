@@ -107,3 +107,37 @@ trabalhar um pouco mais. Se não houver pedidos restantes que Dmitry precise cui
 vazio deve ser retornada.
 */
 
+function remainingOrders(timeRemaining, arraySucos){
+    
+    let timeShift = 0;
+    let i = 0;
+
+    while((i < arraySucos.length) && (timeShift < timeRemaining)){
+
+        if(arraySucos[0] == "Pure Strawberry Joy"){
+            timeShift += 0.5;
+             
+        } else if((arraySucos[0] == "Energizer") || (arraySucos[0] == "Green Garden") ){
+            timeShift += 1.5;
+          
+        } else if(arraySucos[0] == "Tropical Island"){
+            timeShift += 3;
+           
+        } else if(arraySucos[0] == "All or Nothing"){
+            timeShift += 5;
+          
+        } else{
+            timeShift += 2.5;
+          
+        }
+
+        arraySucos.shift();
+        i++;
+        // Problema como retirar os elementos que sobraram no arraySucos depois de acabar o tempo.
+        // Verificar os métodos de retirada de elementos no array.
+    }
+
+    return arraySucos;
+}
+
+console.log(remainingOrders(5, ['Energizer', 'All or Nothing', 'Green Garden']));
