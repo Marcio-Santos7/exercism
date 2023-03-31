@@ -112,7 +112,7 @@ function remainingOrders(timeRemaining, arraySucos){
     let timeShift = 0;
     let i = 0;
 
-    while((i < arraySucos.length) && (timeShift < timeRemaining)){
+    while(timeShift < timeRemaining){
 
         if(arraySucos[0] == "Pure Strawberry Joy"){
             timeShift += 0.5;
@@ -133,11 +133,19 @@ function remainingOrders(timeRemaining, arraySucos){
 
         arraySucos.shift();
         i++;
-        // Problema como retirar os elementos que sobraram no arraySucos depois de acabar o tempo.
-        // Verificar os métodos de retirada de elementos no array.
     }
 
     return arraySucos;
 }
 
 console.log(remainingOrders(5, ['Energizer', 'All or Nothing', 'Green Garden']));
+console.log(remainingOrders(13, ['Pure Strawberry Joy',
+'Pure Strawberry Joy',
+'Vitality',
+'Tropical Island',
+'All or Nothing',
+'All or Nothing',
+'All or Nothing',
+'Green Garden',
+'Limetime']));
+
